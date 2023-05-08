@@ -1,3 +1,4 @@
+import 'package:bookly/constances.dart';
 import 'package:bookly/core/utlis/assets.dart';
 import 'package:bookly/core/utlis/styles.dart';
 import 'package:flutter/material.dart';
@@ -25,15 +26,28 @@ class BestSellerListViewItem extends StatelessWidget {
           ),
           const SizedBox(width: 30),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width * .5,
-                child: const Text(
-                  'The Jungle Book The Jungle Book The Jungle Book ',
+                child: Text(
+                  'The Doctor Strange Book',
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: Styles.testStyle20,
+                  style: Styles.testStyle20.copyWith(
+                    fontFamily: kGtsectraFine,
+                  ),
                 ),
+              ),
+              const SizedBox(height: 3),
+              const Text(
+                'j.k. Rowling',
+                style: Styles.testStyle14,
+              ),
+              const SizedBox(height: 3),
+              Text(
+                '19.99 €',
+                style: Styles.testStyle14.copyWith(fontWeight: FontWeight.bold),
               ),
             ],
           ),
