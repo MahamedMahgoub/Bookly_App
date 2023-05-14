@@ -21,7 +21,7 @@ class BestSellerListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.4 / 4,
+              aspectRatio: 2.7 / 4,
               child: Container(
                 decoration: BoxDecoration(
                     color: Colors.blue,
