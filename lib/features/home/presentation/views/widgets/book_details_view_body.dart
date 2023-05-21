@@ -1,3 +1,4 @@
+import 'package:bookly/core/utlis/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,26 @@ class BookDetailsViewBody extends StatelessWidget {
         children: [
           const CustomBookDetailsAppbar(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * .15),
+            padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
+          ),
+          const SizedBox(
+            height: 43,
+          ),
+          Text(
+            'Doctor String Book',
+            style: Styles.testStyle30.copyWith(fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(
+            height: 6,
+          ),
+          Opacity(
+            opacity: .7,
+            child: Text(
+              'Rudyard Kipling',
+              style: Styles.testStyle18.copyWith(
+                  fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
+            ),
           ),
         ],
       ),
