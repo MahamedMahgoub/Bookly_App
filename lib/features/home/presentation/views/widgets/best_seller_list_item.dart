@@ -57,7 +57,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        '19.99 €',
+                        '19.99€',
                         style: Styles.testStyle14
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
