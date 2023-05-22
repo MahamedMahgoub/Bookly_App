@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'books_actions.dart';
 import 'custom_book_details_appbar.dart';
+import 'similar_books_list_view.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -22,16 +23,12 @@ class BookDetailsViewBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
           ),
-          const SizedBox(
-            height: 43,
-          ),
+          const SizedBox(height: 43),
           Text(
             'Doctor String Book',
             style: Styles.testStyle30.copyWith(fontWeight: FontWeight.bold),
           ),
-          const SizedBox(
-            height: 6,
-          ),
+          const SizedBox(height: 6),
           Opacity(
             opacity: .7,
             child: Text(
@@ -40,14 +37,21 @@ class BookDetailsViewBody extends StatelessWidget {
                   fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
             ),
           ),
-          const SizedBox(
-            height: 18,
-          ),
+          const SizedBox(height: 18),
           const BookRating(mainAxisAlignment: MainAxisAlignment.center),
-          const SizedBox(
-            height: 37,
-          ),
+          const SizedBox(height: 37),
           const BooksActions(),
+          const SizedBox(height: 50),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Yoy can also like',
+              style: Styles.testStyle14.copyWith(fontWeight: FontWeight.w600),
+            ),
+          ),
+          const SizedBox(height: 16),
+          const SimilarBooksListView(),
+          const SizedBox(height: 40),
         ],
       ),
     );
