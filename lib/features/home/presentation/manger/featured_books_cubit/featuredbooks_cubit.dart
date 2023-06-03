@@ -22,13 +22,3 @@ class FeaturedbooksCubit extends Cubit<FeaturedbooksState> {
     });
   }
 }
-
-/*
- emit(FeaturedbooksLoadingState());
-    var result = await homeRepo.fetchFeatureBooks();
-    result.fold((failure) {
-      emit(FeaturedbooksFailureState(failure.errMassage));
-    }, (books) {
-      emit(FeaturedbooksSuccessState(books));
-    });
- */
