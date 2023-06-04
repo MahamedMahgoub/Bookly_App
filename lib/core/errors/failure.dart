@@ -38,8 +38,6 @@ class ServerFailure extends Failure {
 
       case DioErrorType.unknown:
         return ServerFailure('Opps There Was an error, please try later');
-      default:
-        return ServerFailure('Opps There Was an error, please try later');
     }
   }
 
