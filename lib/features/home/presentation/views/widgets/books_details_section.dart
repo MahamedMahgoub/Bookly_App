@@ -18,7 +18,10 @@ class BooksDetailsSection extends StatelessWidget {
         const CustomBookDetailsAppbar(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl:
+                'https://www.nicepng.com/ourpic/u2q8y3r5o0t4r5r5_photoshop-how-to-video-photoshop-book-cover-png/',
+          ),
         ),
         const SizedBox(height: 43),
         Text(
