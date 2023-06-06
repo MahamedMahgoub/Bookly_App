@@ -16,12 +16,10 @@ class BookDetailsViewBody extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Column(
               children: [
-                BooksDetailsSection(
-                  bookModel: bookModel,
-                ),
+                BooksDetailsSection(bookModel: bookModel),
                 const Expanded(child: SizedBox(height: 50)),
                 const SimilarBooksSection(),
-                const SizedBox(height: 40),
+                const SizedBox(height: 30),
               ],
             ),
           ),
@@ -30,3 +28,37 @@ class BookDetailsViewBody extends StatelessWidget {
     );
   }
 }
+
+//  child: Padding(
+//             padding: const EdgeInsets.symmetric(horizontal: 30),
+//             child: Column(
+//               children: [
+//                 BooksDetailsSection(bookModel: bookModel),
+//                 const Expanded(child: SizedBox(height: 50)),
+//                 const SimilarBooksSection(),
+//                 const SizedBox(height: 40),
+//               ],
+//             ),
+//           ),
+
+
+
+
+// CustomScrollView(
+//       physics: const BouncingScrollPhysics(),
+//       slivers: [
+//         SliverFillRemaining(
+//           child: Padding(
+//             padding: const EdgeInsets.symmetric(horizontal: 30),
+//             child: Column(
+//               children: [
+//                 BooksDetailsSection(bookModel: bookModel),
+//                 const Expanded(child: SizedBox(height: 50)),
+//                 const SimilarBooksSection(),
+//                 const SizedBox(height: 40),
+//               ],
+//             ),
+//           ),
+//         ),
+//       ],
+//     );
